@@ -1,35 +1,18 @@
 import React from 'react';
-import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./Components";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Navbar, HomePage, Contact,CardDetail, DisplayZigZag, Animation } from "./Components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <h1>Hi</h1>
-        <Navbar />
-      </div>
+  <Router>
+    <div className="bg-primary w-full overflow-hidden relative">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/:id" element={<CardDetail />} />
+      </Routes>
     </div>
-
-    <div className={`bg-primary ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
-      </div>
-    </div>
-    
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
-        <Billing />
-        <CardDeal />
-        <Testimonials />
-        <Clients />
-        <CTA />
-        <Footer />
-      </div>
-    </div>
-  </div>
+  </Router>
 );
 
 export default App;
