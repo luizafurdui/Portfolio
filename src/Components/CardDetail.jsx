@@ -1,14 +1,18 @@
 import React, { Suspense, lazy } from 'react';
 import { useParams } from 'react-router-dom';
 import { cards } from '../constants';
-import { Footer } from "./index";
+import { Footer } from './index';
 
-// Map available layouts to their corresponding components
-const layouts = {
-  layout1: lazy(() => import('./Layout1')),
-  layout2: lazy(() => import('./Layout2')),
-  layout3: lazy(() => import('./Layout3')),
-  // Add more layouts as needed
+// Lazy load your layout components
+const DisplayZigZag = lazy(() => import('./DisplayZigZag'));
+const DisplayonRows = lazy(() => import('./DisplayonRows'));
+const Grid = lazy(() => import('./grid'));  // Assuming you have a Grid component
+
+// Map layout strings to components
+const layoutComponents = {
+  DisplayZigZag: DisplayZigZag,
+  DisplayonRows: DisplayonRows,
+  grid: Grid,
 };
 
 function CardDetail() {
@@ -20,7 +24,7 @@ function CardDetail() {
   }
 
   // Get the corresponding layout component
-  const LayoutComponent = layouts[card.layout];
+  const LayoutComponent = layoutComponents[card.layout];
 
   if (!LayoutComponent) {
     return <h1 className="text-white text-3xl">Layout not found</h1>;
@@ -31,7 +35,7 @@ function CardDetail() {
       <Suspense fallback={<div>Loading...</div>}>
         <LayoutComponent card={card} />
       </Suspense>
-      <Footer /> 
+      <Footer />
     </div>
   );
 }

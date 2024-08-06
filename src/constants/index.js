@@ -121,7 +121,7 @@ export const cards = [
     description: "This collection features an enchanting assortment of cute illustrated objects, perfect for adding a touch of simplicity and joy to any project. Perfect as stickers, they are ideal for decorating planners, laptops, water bottles, or any surface that could use a little extra fun",
     client: "",
     tools: "Procreate",
-    layout: "DisplayonRows.jsx", 
+    layout: "DisplayonRows", 
     photos: [
       Objects2, 
       Objects1, 
