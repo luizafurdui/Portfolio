@@ -1,0 +1,233 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Tailwind CSS imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom properties (CSS variables) */
+:root {
+  --primary-color: #090a12;
+  --gray-color: #888;
+  --dark-gray-color: #555;
+}
+
+/* Global styles */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Text gradient */
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Background gradients */
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+.bg-purple-gradient {
+  background: rgb(186, 123, 203);
+  background: linear-gradient(90deg, rgba(186, 123, 203, 1) 7%, rgba(167, 165, 245, 1) 76%);
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+/* Box shadow */
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+/* Sidebar animation */
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Custom scroll bar for webkit browsers */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the vertical scroll bar */
+  height: 10px; /* Height of the horizontal scroll bar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color); /* Primary color for the scroll bar track */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-color); /* Gray color for the scroll bar handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-gray-color); /* Darker gray color when hovered */
+}
+
+/* Custom scroll bar for Firefox */
+body {
+  scrollbar-width: thin; /* Width of the scroll bar for Firefox (options: auto, thin, none) */
+  scrollbar-color: var(--gray-color) var(--primary-color); /* Handle and track colors */
+}
+
+/* Custom scroll bar class */
+.custom-scrollbar {
+  scrollbar-width: thin; /* Width of the scroll bar for Firefox (options: auto, thin, none) */
+  scrollbar-color: var(--gray-color) var(--primary-color);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px; /* Width of the vertical scroll bar */
+  height: 10px; /* Height of the horizontal scroll bar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--gray-color);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-gray-color);
+}
+
+/* Keyframe animation for slide-top */
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Feature card hover effect */
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+/* Feedback card styles */
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+/* Gradient backgrounds */
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+/* Border styles */
+.border-2 {
+  border-width: 2px;
+}
+
+.border-thin {
+  border-width: 0.5px;
+}
+
+.border-white {
+  border-color: white;
+}
+
+.border-gray {
+  border-color: rgb(162, 162, 162);
+}
+
+
+/* Base style for the text */
+.text-hover {
+  color: gray; /* Initial text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect */
+.text-hover:hover {
+  color: gray; /* Change text color to white on hover */
+}
+.text-hover:hover {
+  filter: grayscale(0%) brightness(150%); /* Change to full color and increase brightness on hover */
+}
