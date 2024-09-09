@@ -11,9 +11,8 @@ const Contact = () => (
         <h1 className="text-white font-ubuntu mb-2">Bio</h1>
         <div className="text-gray font-ubuntu">
           <p className="font-ubuntu">
-            Hi, I’m Luiza. A self-taught designer and economic informatics student.
-            e.
-            My goal is to further develop my skills so I can bring even greater value to the team.
+          I create illustrations for businesses, personal projects, and everything in between, combining creativity with a strong passion for visual storytelling. I love exploring different technologies and styles, from animation to illustration,
+           constantly pushing myself to experiment and grow as a designer.
           </p>
         </div>
         <h1 className="text-white mt-4 font-ubuntu">Contact</h1>

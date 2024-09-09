@@ -226,7 +226,7 @@ export const cards = [
     year: "2023",
     cover: RobotsCover,
     path: '/RobotIllustrations',
-    description: "It's just me for now",
+    description: "I created a series of robot illustrations and an animation, focusing on simple shapes and clean lines.",
     client: "",
     tools: "Figma LottieFiles",
     layout: "grid",
