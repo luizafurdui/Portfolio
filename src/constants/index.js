@@ -96,6 +96,25 @@ export const cards = [
     lottie: astronautAnimation // Use this instead of an array
   },
   {
+    id: generateIdFromTitle("Astronaut Illustrations"),
+    title: "Astronaut Illustrations & Animations",
+    year: "2024",
+    cover: AstronautCover,
+    path: '/Astronaut',
+    description: "This project included designing and illustrating a set of minimalist astronauts for PagePilot. Perfect for web pages, or creative projects, these astronauts bring a sense of exploration and curiosity while maintaining a polished and modern aesthetic. Through this artwork, we aimed to blend the intriguing theme of space with a sense of serenity, encouraging viewers to explore beyond the visuals and into the realms of creativity and wonder.",
+    client: " PagePilot",
+    clientLink: "https://pagepilot.ai/?gc_id=20923015340&h_ga_id=157667023179&h_ad_id=700133250183&h_keyword_id=kwd-1929163959082&h_keyword=pagepilot&h_placement=&gad_source=1&gclid=Cj0KCQjwwae1BhC_ARIsAK4JfrxBTjN9JZlgtIDf3llMTzu1HGrnGVUoPUJmt1jr66hM9UABWQPqsIQaAhmIEALw_wcB",
+    tools: "Procreate  Illustrator  AfterEffects",
+    layout: "DisplayZigZag",
+    photos: [ 
+      pilot7, 
+      pilot8, 
+      pilot9, 
+      pilot1, 
+    ], 
+    lottie: astronautAnimation // Use this instead of an array
+  },
+  {
     id: generateIdFromTitle("Facebook Illustrations"),
     title: "Facebook Ads",
     year: "2021",

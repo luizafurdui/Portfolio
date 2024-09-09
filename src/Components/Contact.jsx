@@ -12,8 +12,7 @@ const Contact = () => (
         <div className="text-gray font-ubuntu">
           <p className="font-ubuntu">
             Hi, I’m Luiza. A self-taught designer and economic informatics student.
-            My attitude is fueled by hard work. With a keen eye for design,
-            I can transform any dull website into a captivating experience.
+            e.
             My goal is to further develop my skills so I can bring even greater value to the team.
           </p>
         </div>
