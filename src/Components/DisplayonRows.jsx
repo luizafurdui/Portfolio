@@ -1,9 +1,11 @@
 import React from 'react';
 import Lottie from 'lottie-react';
+//import RivAnimationIcons from './RiveAnimation'; // Asigură-te că importul este corect
 
 function DisplayOnePerRow({ card }) {
   const mediaItems = [
     ...(card.lottie ? [card.lottie] : []),
+    ...(card.riv ? [<card.riv />] : []),  // Adaugă animația Rive în mediaItems ca o componentă
     ...(card.photos || []),
   ];
 
@@ -39,11 +41,7 @@ function DisplayOnePerRow({ card }) {
                 />
               </div>
             ) : (
-              <Lottie
-                animationData={mediaItems[0]}
-                style={{ width: 540, height: 'auto' }}
-                className="rounded-lg ml-10"
-              />
+              mediaItems[0] // Randează direct componenta Rive sau Lottie
             )
           )}
         </div>
@@ -52,13 +50,9 @@ function DisplayOnePerRow({ card }) {
         {mediaItems.slice(1).map((item, index) => (
           <div key={index} className="flex justify-center items-center w-full h-auto">
             {typeof item === 'string' ? (
-              <img src={item} alt={`media-${index + 1}`} className="object-contain max-w-full max-h-full  border-thin border-gray rounded-lg mb-10" />
+              <img src={item} alt={`media-${index + 1}`} className="object-contain max-w-full max-h-full border-thin border-gray rounded-lg mb-10" />
             ) : (
-              <Lottie
-                animationData={item}
-                style={{ width: '100%', height: 'auto' }}
-                className="rounded-lg mb-10"
-              />
+              item // Randează direct componenta Rive sau Lottie pentru celelalte elemente media
             )}
           </div>
         ))}

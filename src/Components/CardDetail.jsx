@@ -4,13 +4,12 @@ import { cards } from '../constants';
 import { Footer } from './index';
 
 // Lazy load your layout components
-const DisplayZigZag = lazy(() => import('./DisplayZigZag'));
+
 const DisplayonRows = lazy(() => import('./DisplayonRows'));
 const Grid = lazy(() => import('./grid'));  // Assuming you have a Grid component
 
 // Map layout strings to components
 const layoutComponents = {
-  DisplayZigZag: DisplayZigZag,
   DisplayonRows: DisplayonRows,
   grid: Grid,
 };

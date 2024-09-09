@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Navbar, HomePage, Contact,CardDetail, DisplayZigZag, Animation } from "./Components";
+import { Navbar, HomePage, Contact,CardDetail, Animation } from "./Components";
 
 const App = () => (
   <Router>

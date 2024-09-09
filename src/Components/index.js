@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import HomePage from "./HomePage";
 import Contact from "./Contact"
 import CardDetail from "./CardDetail";
-import DisplayZigZag from "./DisplayZigZag";
 import Animation from "./Animation"
 export {
   Navbar,
@@ -13,6 +12,5 @@ export {
   HomePage,
   Contact, 
   CardDetail,
-  DisplayZigZag,
   Animation, 
 };

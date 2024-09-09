@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 function DisplayGrid({ card }) {
   // All media items, including the first one, should be displayed in the grid
   const mediaItems = [
-    ...(card.lottie ? [card.lottie] : []),
+    ...(card.lottie ? [card.lottie] : []),  // Lottie animation data is now added correctly
     ...(card.photos || []),
   ];
 
@@ -30,7 +30,7 @@ function DisplayGrid({ card }) {
                 <img src={item} alt={`media-${index + 1}`} className="object-contain w-full h-auto rounded-lg mb-10" />
               ) : (
                 <Lottie
-                  animationData={item}
+                  animationData={item}  // Ensure you're passing correct animation data
                   style={{ width: '100%', height: 'auto' }}
                   className="rounded-lg mb-10"
                 />

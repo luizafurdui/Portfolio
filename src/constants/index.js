@@ -1,7 +1,7 @@
 import profilio1 from '../Images/profilio1.png';
 import profilio2 from '../Images/profilio2.png';
 import profilio3 from '../Images/profilio3.png';
-import Lottie from 'lottie-react';
+
 import { gmail, instagram, linkedin } from "../assets";
 
 import NinjaCover from '../Images/NinjaCover.svg';
@@ -53,11 +53,15 @@ import azuki1 from '../Images/azuki1.png';
 import azuki2 from '../Images/azuki2.png'; 
 import azuki3 from '../Images/azuki3.png'; 
 
-
+import robot1 from '../Images/robot1.png'; 
+import robot2 from '../Images/robot2.png';
+import rivCover from '../Images/rivCover.png'; 
 // Import Lottie animations
 import robotAnimation from '../Images/robot.json';
 import astronautAnimation from '../Images/astronaut.json';
 
+
+import RivAnimation from '../Components/RivAnimation'; 
 const generateIdFromTitle = (title) => {
   return title.toLowerCase().replace(/ /g, '-');
 };
@@ -77,23 +81,15 @@ export const navLinks = [
 
 export const cards = [
   {
-    id: generateIdFromTitle("Astronaut Illustrations"),
-    title: "Astronaut Illustrations & Animations",
+    id: generateIdFromTitle("Interactive Animation"),
+    title: "Interactive Animation",
     year: "2024",
-    cover: AstronautCover,
-    path: '/Astronaut',
-    description: "This project included designing and illustrating a set of minimalist astronauts for PagePilot. Perfect for web pages, or creative projects, these astronauts bring a sense of exploration and curiosity while maintaining a polished and modern aesthetic. Through this artwork, we aimed to blend the intriguing theme of space with a sense of serenity, encouraging viewers to explore beyond the visuals and into the realms of creativity and wonder.",
-    client: " PagePilot",
-    clientLink: "https://pagepilot.ai/?gc_id=20923015340&h_ga_id=157667023179&h_ad_id=700133250183&h_keyword_id=kwd-1929163959082&h_keyword=pagepilot&h_placement=&gad_source=1&gclid=Cj0KCQjwwae1BhC_ARIsAK4JfrxBTjN9JZlgtIDf3llMTzu1HGrnGVUoPUJmt1jr66hM9UABWQPqsIQaAhmIEALw_wcB",
-    tools: "Procreate  Illustrator  AfterEffects",
-    layout: "DisplayZigZag",
-    photos: [ 
-      pilot7, 
-      pilot8, 
-      pilot9, 
-      pilot1, 
-    ], 
-    lottie: astronautAnimation // Use this instead of an array
+    cover: rivCover,
+    path: '/Animation',
+    description: "For this project, I wanted to create an interactive animation using Rive, which is great for adding fun and responsive visuals to websites. My goal was to design an animation that reacts when users interact with it, making the experience more engaging. ",
+    tools: "Riv, React",
+    layout: "DisplayonRows",
+    riv: RivAnimation // Use this instead of an array
   },
   {
     id: generateIdFromTitle("Astronaut Illustrations"),
@@ -105,7 +101,7 @@ export const cards = [
     client: " PagePilot",
     clientLink: "https://pagepilot.ai/?gc_id=20923015340&h_ga_id=157667023179&h_ad_id=700133250183&h_keyword_id=kwd-1929163959082&h_keyword=pagepilot&h_placement=&gad_source=1&gclid=Cj0KCQjwwae1BhC_ARIsAK4JfrxBTjN9JZlgtIDf3llMTzu1HGrnGVUoPUJmt1jr66hM9UABWQPqsIQaAhmIEALw_wcB",
     tools: "Procreate  Illustrator  AfterEffects",
-    layout: "DisplayZigZag",
+    layout: "DisplayonRows",
     photos: [ 
       pilot7, 
       pilot8, 
@@ -233,7 +229,11 @@ export const cards = [
     description: "It's just me for now",
     client: "",
     tools: "Figma LottieFiles",
-    layout: "DisplayZigZag",
+    layout: "grid",
+    photos:[
+      robot1, 
+      robot2
+    ],
     lottie: robotAnimation // Add Lottie animation here if needed
   }
  
