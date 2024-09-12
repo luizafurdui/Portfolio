@@ -25,7 +25,7 @@ const Contact = () => (
 
         {/* Bio Paragraph */}
         <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[55px] font-ubuntu leading-relaxed">
-        I’m a self-taught graphic designer with several years of experience in designing and illustrating for businesses, personal projects, and more. My work spans across various mediums, including illustration, animation, 2D and 3D design, and web design. I have a strong passion for visual storytelling and enjoy exploring different technologies and styles to bring creative ideas to life."  </p>
+        I’m a self-taught graphic designer with several years of experience in designing and illustrating for businesses, personal projects, and more. My work spans across various mediums, including illustration, animation, 2D and 3D design, and web design. I have a strong passion for visual storytelling and enjoy exploring different technologies and styles to bring creative ideas to life.  </p>
       
       </div>
 
