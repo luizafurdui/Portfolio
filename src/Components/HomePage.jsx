@@ -5,26 +5,24 @@ import { cards } from '../constants';
 
 function HomePage() {
   return (
-    <div className="bg-primary min-h-screen w-full flex flex-col">
+    <div className="bg-primary min-h-screen w-full flex flex-col items-center mt-10">
       <div className="relative z-10 mt-24 flex-grow">
-        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth}`}>
-            <div className="w-full sm:w-[940px] mx-auto">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-                {cards.map((card, index) => (
-                  <div key={index} className="flex justify-center">
-                    <Card id={card.id} title={card.title} year={card.year} cover={card.cover} />
-                  </div>
-                ))}
+        {/* Ensure container scales properly */}
+        <div className="w-full max-w-screen-2xl mx-auto px-6 sm:px-16">
+          {/* Grid layout with 3 columns on xl screens */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 gap-6 xl:gap-20 justify-center">
+            {cards.map((card, index) => (
+              <div key={index} className="flex justify-center">
+                <Card id={card.id} title={card.title} year={card.year} cover={card.cover} />
               </div>
-            </div>
-            <h2 className="font-ubuntu font-light text-[16px] leading-[32.4px] text-white my-8 text-center">
-              Get ready for a new wave of innovation
-            </h2>
+            ))}
           </div>
+          {/* Adjusted text sizes for larger screens */}
+          <h2 className="font-ubuntu font-light text-[20px] sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[64px] leading-[28px] sm:leading-[32px] md:leading-[40px] lg:leading-[48px] xl:leading-[72px] text-white my-8 text-center">
+            Get ready for a new wave of innovation
+          </h2>
         </div>
       </div>
-
       <Footer />
     </div>
   );

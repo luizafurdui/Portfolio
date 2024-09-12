@@ -3,17 +3,45 @@ import gsap from 'gsap';
 
 function Animation() {
   useEffect(() => {
+    // Detect if the screen size is 'xl' (1280px or greater)
+    const isXL = window.innerWidth >= 1280;
+
+    // Set different widths based on screen size
+    const smallScreenWidths = {
+      Line1: 150,
+      Line2: 380,
+      Line3: 180,
+      Line4: 80,
+      Line5: 280,
+      Line6: 360,
+    };
+
+    const xlScreenWidths = {
+      Line1: 250,
+      Line2: 500,
+      Line3: 300,
+      Line4: 150,
+      Line5: 400,
+      Line6: 500,
+    };
+
+    // Choose appropriate widths based on screen size
+    const widths = isXL ? xlScreenWidths : smallScreenWidths;
+
     // Create a timeline
     const tl = gsap.timeline();
 
-    // Animate divs growing to their full width with faster animation
-    tl.to(".Line1 .d1, .Line1 .d1, .Line3 .d3, .Line4 .d4, .Line5 .d5", { width: 150, duration: 0.3, ease: "power3.out", stagger: 0.05 })
-      .to(".Line2 .d2", { width: 380, duration: 0.7, ease: "power3.out" }, "<0.1")  // Nearly simultaneous start
-      .to(".Line3 .d3", { width: 180, duration: 0.7, ease: "power3.out" }, "<0.1")
-      .to(".Line4 .d4", { width: 80, duration: 0.7, ease: "power3.out" }, "<0.1")
-      .to(".Line5 .d5", { width: 280, duration: 0.7, ease: "power3.out" }, "<0.1")
-      .to(".Line6 .d6", { width: 360, duration: 0.7, ease: "power3.out" }, "<0.1")
+    // Animate divs growing to their full width based on screen size
+    tl.to(".Line1 .d1, .Line1 .d1, .Line3 .d3, .Line4 .d4, .Line5 .d5", {
+      width: widths.Line1, duration: 0.3, ease: "power3.out", stagger: 0.05
+    })
+      .to(".Line2 .d2", { width: widths.Line2, duration: 0.7, ease: "power3.out" }, "<0.1")
+      .to(".Line3 .d3", { width: widths.Line3, duration: 0.7, ease: "power3.out" }, "<0.1")
+      .to(".Line4 .d4", { width: widths.Line4, duration: 0.7, ease: "power3.out" }, "<0.1")
+      .to(".Line5 .d5", { width: widths.Line5, duration: 0.7, ease: "power3.out" }, "<0.1")
+      .to(".Line6 .d6", { width: widths.Line6, duration: 0.7, ease: "power3.out" }, "<0.1")
       .to(".patrat", { width: 10, height: 10, duration: 0.3, ease: "power3.out", stagger: 0.05 }, "<0.1");
+
   }, []);
 
   return (
@@ -38,11 +66,7 @@ function Animation() {
       </div>
       <div className="Line6 flex space-x-2">
         <div className="d6 bg-purple-gradient h-3" data-width="160px"></div>
-     
       </div>
-    
-  
-    
     </div>
   );
 }

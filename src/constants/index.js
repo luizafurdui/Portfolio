@@ -17,6 +17,7 @@ import Objects1 from '../Images/Objects1.png';
 import Objects2 from '../Images/Objects2.png';
 import Objects3 from '../Images/Objects3.png';
 import Objects4 from '../Images/Objects4.png';
+import Objects5 from '../Images/Objects5.png';
 
 import web1 from '../Images/web1.png';
 import web2 from '../Images/web2.png';
@@ -48,7 +49,7 @@ import Nft11 from '../Images/Nft11.png';
 import Nft12 from '../Images/Nft12.png'; 
 import Nft13 from '../Images/Nft13.jpg'; 
 import Nft14 from '../Images/Nft14.png'; 
-
+import NftCover from '../Images/nftCover.png'
 import azuki1 from '../Images/azuki1.png'; 
 import azuki2 from '../Images/azuki2.png'; 
 import azuki3 from '../Images/azuki3.png'; 
@@ -59,7 +60,7 @@ import rivCover from '../Images/rivCover.png';
 // Import Lottie animations
 import robotAnimation from '../Images/robot.json';
 import astronautAnimation from '../Images/astronaut.json';
-
+import profilio from '../Images/profilio.png'; 
 
 import RivAnimation from '../Components/RivAnimation'; 
 const generateIdFromTitle = (title) => {
@@ -114,7 +115,7 @@ export const cards = [
     id: generateIdFromTitle("Facebook Illustrations"),
     title: "Facebook Ads",
     year: "2021",
-    cover: profilio1,
+    cover: profilio,
     path: '/Ads',
     description: "This project involved creating compelling ads for Profilio, focusing on delivering visually striking designs that effectively communicate the brand's message.",
     client: " Profilio",
@@ -148,7 +149,7 @@ export const cards = [
     id: generateIdFromTitle("Nfts Ninja Collection"),
     title: "NFT Ninja Collection",
     year: "2022",
-    cover: Nft13,
+    cover: NftCover,
     path: '/Ninja',
     description: "Ninja NFT Collection is an exclusive series of digital art pieces that capture the stealth, agility, and mystique of the legendary ninja warriors. Each NFT in this collection features intricately designed characters, showcasing their unique skills, weapons, and attire.",
     client: "",
