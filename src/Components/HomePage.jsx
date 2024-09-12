@@ -9,8 +9,8 @@ function HomePage() {
       <div className="relative z-10 mt-24 flex-grow">
         <div className={`${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
-            <div className="w-full sm:w-[740px] mx-auto">
-              <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+            <div className="w-full sm:w-[940px] mx-auto">
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
                 {cards.map((card, index) => (
                   <div key={index} className="flex justify-center">
                     <Card id={card.id} title={card.title} year={card.year} cover={card.cover} />
@@ -18,7 +18,7 @@ function HomePage() {
                 ))}
               </div>
             </div>
-            <h2 className="font-ubuntu font-light text-[12px] leading-[32.4px] text-white my-8 text-center">
+            <h2 className="font-ubuntu font-light text-[16px] leading-[32.4px] text-white my-8 text-center">
               Get ready for a new wave of innovation
             </h2>
           </div>

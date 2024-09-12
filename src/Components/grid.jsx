@@ -23,11 +23,11 @@ function DisplayGrid({ card }) {
 
       {/* Grid displaying all media items */}
       <div className="w-full max-w-6xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {mediaItems.map((item, index) => (
             <div key={index} className="flex justify-center items-center w-full h-auto">
               {typeof item === 'string' ? (
-                <img src={item} alt={`media-${index + 1}`} className="object-contain w-full h-auto rounded-lg mb-10" />
+                <img src={item} alt={`media-${index + 1}`} className="object-contain w-full h-auto " />
               ) : (
                 <Lottie
                   animationData={item}  // Ensure you're passing correct animation data
