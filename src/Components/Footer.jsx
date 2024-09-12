@@ -19,7 +19,7 @@ const Footer = () => (
             key={social.id}
             src={social.icon}
             alt={social.id}
-            className={`w-[20px] h-[20px] sm:w-[25px] sm:h-[25px] md:w-[30px] md:h-[30px] lg:w-[35px] lg:h-[35px] xl:w-[100px] xl:h-[100px] object-contain cursor-pointer ${
+            className={`w-[20px] h-[20px] sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px] lg:w-[25px] lg:h-[25px] xl:w-[100px] xl:h-[100px] object-contain cursor-pointer ${
               index !== socialMedia.length - 1
                 ? "mr-6 sm:mr-8 md:mr-5 lg:mr-4 xl:mr-14"
                 : "mr-7"

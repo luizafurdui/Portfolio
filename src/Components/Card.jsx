@@ -12,7 +12,7 @@ function Card({ id, title, year, cover }) {
         ></div>
         <div className="mt-1">
           {/* Apply consistent responsive sizing and line heights */}
-          <h1 className="font-ubuntu font-light text-[14px] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-[64px] leading-[28px] sm:leading-[32px] md:leading-[26px] lg:leading-[48px] xl:leading-[72px] text-gray ml-[11px]">
+          <h1 className="font-ubuntu font-light text-[14px] sm:text-[14px] md:text-[14px] lg:text-[14px] xl:text-[64px] xl:mt-6 leading-[28px] sm:leading-[32px] md:leading-[26px] lg:leading-[48px] xl:leading-[72px] text-gray ml-[11px]">
   {title}
 </h1>
 

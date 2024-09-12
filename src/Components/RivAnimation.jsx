@@ -2,10 +2,10 @@ import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import { useEffect, useState } from "react";
 
 export const RiveAnimation = () => {
-  // Load the Rive file with the correct state machine
+  
   const { rive, RiveComponent } = useRive({
-    src: "./icon.riv",  // Make sure your path is correct
-    stateMachines: "State Machine 1",  // Adjust the state machine name
+    src: "./icon.riv", 
+    stateMachines: "State Machine 1",  
     autoplay: true,
   });
 
