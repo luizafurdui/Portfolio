@@ -29,7 +29,7 @@ export const RiveAnimation = () => {
   return (
     <div className="App">
       <RiveComponent
-        style={{ height: isMobile ? "400px" : "800px", width: isMobile ? "400px" : "800px" }}  // Adjust dimensions based on screen size
+        style={{ height: isMobile ? "400px" : "600px", width: isMobile ? "400px" : "600px" }}  // Adjust dimensions based on screen size
         onClick={() => button3Input && button3Input.fire()}  // Fire the button 3 input on click
       />
     </div>
