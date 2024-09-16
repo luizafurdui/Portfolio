@@ -7,13 +7,13 @@ function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full h-20 bg-[#0F0E11] xl:h-[180px] text-white flex justify-between items-center p-5 z-50 border-b border-[#3F3E45]/50">
+    <nav className="fixed top-0 left-0 w-full h-20 bg-[#0F0E11] xl:h-[140px] text-white flex justify-between items-center p-5 z-50 border-b border-[#3F3E45]/50">
 
       <Link to="/">
         <img 
           src={logo} 
           alt="Logo" 
-          className="w-[60px] h-[80px] sm:w-[80px] sm:h-[100px] md:w-[100px] md:h-[120px] lg:w-[110px] lg:mt-7 lg:h-[140px] xl:w-[300px] xl:h-[380px] xl:mt-20 xl:ml-20"
+          className="w-[60px] h-[80px] sm:w-[80px] sm:h-[100px] md:w-[100px] md:h-[120px] lg:w-[110px] lg:mt-7 lg:h-[140px] xl:w-[250px] xl:h-[350px] xl:mt-16 xl:ml-20"
         />
       </Link>
 
@@ -21,7 +21,7 @@ function Navbar() {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-ubuntu font-normal cursor-pointer text-[12px] text-hover xl:text-[50px] ${
+            className={`font-ubuntu font-normal cursor-pointer text-[12px] text-hover xl:text-[25px] ${
               index === navLinks.length - 1 ? 'mr-0' : 'mr-10'
             } text-gray-400 hover:text-white`}
           >

@@ -8,7 +8,7 @@ const Footer = () => (
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6">
 
       {/* Copyright Text */}
-      <p className="font-ubuntu font-normal text-center text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[60px] leading-[22px] sm:leading-[24px] md:leading-[27px] lg:leading-[30px] xl:leading-[32px] text-white ml-2">
+      <p className="font-ubuntu font-normal text-center text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] xl:text-[30px] leading-[22px] sm:leading-[24px] md:leading-[27px] lg:leading-[30px] xl:leading-[32px] text-white ml-2">
         <span className="text-purple">Copyright Ⓒ 2024 Luiza.</span> All Rights Reserved.
       </p>
 
@@ -19,7 +19,7 @@ const Footer = () => (
             key={social.id}
             src={social.icon}
             alt={social.id}
-            className={`w-[20px] h-[20px] sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px] lg:w-[25px] lg:h-[25px] xl:w-[100px] xl:h-[100px] object-contain cursor-pointer ${
+            className={`w-[20px] h-[20px] sm:w-[18px] sm:h-[18px] md:w-[20px] md:h-[20px] lg:w-[25px] lg:h-[25px] xl:w-[50px] xl:h-[50px] object-contain cursor-pointer ${
               index !== socialMedia.length - 1
                 ? "mr-6 sm:mr-8 md:mr-5 lg:mr-4 xl:mr-14"
                 : "mr-7"

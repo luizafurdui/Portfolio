@@ -15,16 +15,16 @@ const Contact = () => (
       <div className="w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[50vw] xl:w-[40vw] p-6 sm:p-8 md:p-10 text-gray font-ubuntu text-center md:text-left">
       
         {/* Contact Header */}
-        <h1 className="text-white text-[24px] sm:text-[28px] md:text-[32px] lg:text-[26px] xl:text-[60px] font-ubuntu mb-2">Contact</h1>
+        <h1 className="text-white text-[24px] sm:text-[28px] md:text-[32px] lg:text-[26px] xl:text-[35px] font-ubuntu mb-2">Contact</h1>
 
         {/* Email */}
-        <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[55px] font-ubuntu mb-6">furduiluiza@gmail.com</p>
+        <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] font-ubuntu mb-6">furduiluiza@gmail.com</p>
 
         {/* Bio Header */}
-        <h1 className="text-white font-ubuntu mb-2 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[26px] xl:text-[60px]">Bio</h1>
+        <h1 className="text-white font-ubuntu mb-2 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[26px] xl:text-[35px]">Bio</h1>
 
         {/* Bio Paragraph */}
-        <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[55px] font-ubuntu leading-relaxed">
+        <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[25px] font-ubuntu leading-relaxed">
         I’m a self-taught graphic designer with several years of experience in designing and illustrating for businesses, personal projects, and more. My work spans across various mediums, including 2D and 3D illustration, animation and web design. I have a strong passion for visual storytelling and enjoy exploring different technologies and styles to bring creative ideas to life.  </p>
       
       </div>
