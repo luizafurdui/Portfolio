@@ -15,8 +15,8 @@ function DisplayOnePerRow({ card }) {
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-start md:items-center mb-8">
         {/* Text on the left */}
         <div className="text-center md:text-left md:mr-8 flex-1">
-          <h1 className="text-white text-[24px] mb-4 font-ubuntu">{card.title}</h1>
-          <p className="text-gray text-[14px] mb-10 font-ubuntu">{card.description}</p>
+          <h1 className="text-white text-[24px] mb-4 font-ubuntu xl: text-[34px]">{card.title}</h1>
+          <p className="text-gray text-[14px] mb-10 font-ubuntu xl: text-[16px]">{card.description}</p>
           {card.client && (
             <p className="text-gray text-[14px] font-ubuntu">
               Client: 

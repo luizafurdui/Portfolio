@@ -12,13 +12,13 @@ function DisplayGrid({ card }) {
     <div className="bg-primary w-full min-h-screen flex flex-col items-center justify-start p-10 mt-20 xl:mt-60">
       {/* Centered text and description at the top */}
       <div className="w-full max-w-6xl text-center mb-8">
-        <h1 className="text-white text-[24px] xl:text-[62px] mb-4 font-ubuntu xl:text-[60px] ">{card.title}</h1>
-        <p className="text-gray text-[14px] mb-10 font-ubuntu xl:text-[60px] ">{card.description}</p>
+        <h1 className="text-white text-[24px] xl:text-[62px] mb-4 font-ubuntu xl:text-[40px] ">{card.title}</h1>
+        <p className="text-gray text-[14px] mb-10 font-ubuntu xl:text-[35px] ">{card.description}</p>
         {card.client && (
-          <p className="text-gray text-[14px] font-ubuntu xl:text-[70px] ">Client: {card.client}</p>
+          <p className="text-gray text-[14px] font-ubuntu xl:text-[40px] ">Client: {card.client}</p>
         )}
-        <p className="text-gray text-[14px] xl:text-[30px] font-ubuntu xl:text-[70px] ">Tools used: {card.tools}</p>
-        <p className="text-gray text-[14px] xl:text-[30px] font-ubuntu xl:text-[70px] ">Year: {card.year}</p>
+        <p className="text-gray text-[14px] xl:text-[30px] font-ubuntu xl:text-[30px] ">Tools used: {card.tools}</p>
+        <p className="text-gray text-[14px] xl:text-[30px] font-ubuntu xl:text-[30px] ">Year: {card.year}</p>
       </div>
 
       {/* Grid displaying all media items */}
@@ -30,7 +30,7 @@ function DisplayGrid({ card }) {
                 <img 
                   src={item} 
                   alt={`media-${index + 1}`} 
-                  className="object-contain w-full h-auto xl:w-[800px] xl:h-[600px]"  // Larger images for xl screens
+                  className="object-contain w-full h-auto xl:w-[400px] xl:h-[400px]"  // Larger images for xl screens
                 />
               ) : (
                 <Lottie
